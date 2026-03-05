@@ -14,12 +14,12 @@
     <name>Uber Project Location Sevices</name>
     <description>Uber Project Location Sevices</description>
     <url/>
-    <repositories>
-        <repository>
-            <id>local-uber-repo</id>
-            <url>file:///D:/FS Project/Uber-Project-Auth-Services/libs</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>local-uber-repo</id>-->
+<!--            <url>file:///D:/FS Project/Uber-Project-Auth-Services/libs</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
     <licenses>
         <license/>
     </licenses>
@@ -36,6 +36,15 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -62,11 +71,11 @@
             <artifactId>spring-boot-starter-data-redis-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.avi1606</groupId>
-            <artifactId>UberProject-Entity</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.avi1606</groupId>-->
+<!--            <artifactId>UberProject-Entity</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
